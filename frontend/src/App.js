@@ -1,10 +1,15 @@
+import React from 'react';
+import Splash from "./pages/splash/splash";
+import Onboarding from "./pages/onboarding/onboarding";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-     femena
-    </div>
+    <>
+      <Splash/>
+      <Onboarding/>
+
+    </>
   );
 }
 

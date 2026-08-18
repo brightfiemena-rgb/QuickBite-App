@@ -1,0 +1,136 @@
+.onboarding-page{
+    min-height: 100vh;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* TOP */
+
+.onboarding-top{
+    position: relative;
+    min-height: 48vh;
+    background: #f5c400;
+    border-radius: 0 0 45px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skip-btn{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border: none;
+    background: transparent;
+    color: #111111;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.onboarding-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delivery-circle{
+    width: 220px;
+    height: 220px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+
+}
+
+/* CONTENT*/
+.onboarding-content{
+    flex: 1;
+    text-align: center;
+    padding: 45px 25px 20px;
+}
+.onboarding-content h1{
+    margin: 0;
+    color: #111111;
+    font-size: 34px;
+    line-height: 1.15;
+    font-weight: 800;
+}
+.onboarding-content p{
+    max-width: 380px;
+    margin: 20px auto 0;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* FOOTER */
+.onboarding-footer{
+    padding: 20px 25px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page-indicators{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.indicator{
+    width: 25px;
+    height: 8px;
+    border-radius: 50%;
+    background: #d7d7d7;
+}
+.indicator.active{
+    width: 25px;
+    border-radius: 10px;
+    background: #f5c400;
+}
+.next-btn{
+    border: none;
+    background: #111111;
+    color: #ffffff;
+    padding: 14px 30px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.next-btn:hover{
+    transform: translateY(-2px);
+}
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .onboarding-top{
+        min-height: 45vh;
+        border-radius: 0 0 35px 35px;
+    }
+
+    .delivery-circle{
+        width: 180px;
+        height: 180px;
+        font-size: 80px;
+    }
+
+    .onboarding-content{
+        padding-top: 35px;
+    }
+
+    .onboarding-content h1{
+        font-size: 28px;
+    }
+
+    .onboarding-content p{
+        font-size: 14px;
+    }
+    .onboarding-footer{
+        padding-bottom: 25px;
+    }
+}
